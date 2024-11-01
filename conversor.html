@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Conversor para moedas</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+
+</head>
+<body>
+    <h1>Conversor de Moedas</h1>
+    <form action="" method="" id="currency-form">
+        <label for="valor">Valor:</label>
+        <input type="text" id="valor" name="valor"><br><br>
+        
+        <label for="de">De:</label>
+        <select id="daMoeda" name="de">
+            <option value="BRL">Real (BRL)</option>
+            <option value="USD">Dólar (USD)</option>
+            <option value="EUR">Euro (EUR)</option>
+        </select><br><br>
+
+        <label for="para">Para:</label>
+        <select id="paraMoeda" name="para">
+            <option value="BRL">Real (BRL)</option>
+            <option value="USD">Dólar (USD)</option>
+            <option value="EUR">Euro (EUR)</option>
+        </select><br><br>
+
+        <button type="submit">Converter</button>
+        <button type="reset">Limpar</button>
+        <div id="conversao"></div>
+    </form>
+      
+        <script src='conversor.js'></script>
+</body>
+</html>
