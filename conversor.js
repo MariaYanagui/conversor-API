@@ -7,7 +7,7 @@ async function getExchangeRate(daMoeda, paraMoeda) {
 // TRATA ERRO TRY/CATCH
     try{
         const response = await fetch(`${apiURL}${daMoeda}`);
-        const data = response.json();
+        const data = await response.json();
 
         if(data.result === "success"){
             return data.conversion_rates[paraMoeda];
@@ -19,6 +19,27 @@ async function getExchangeRate(daMoeda, paraMoeda) {
         return null;
 
     }
-    
 }
 // #####################################################
+
+document.getElementById('currency-form').addEventListener('submit', async function (event){
+    event.preventDefault();
+
+    // OBTER VALORES DE ENTRADA 
+    const valor = parseFloat(document.getElementById ('valor').value);
+    const daMoeda = document.getElementById ('daMoeda').value;
+    const paraMoeda = document.getElementById ('paraMoeda').value;
+
+    const exchangeRate = await getExchangeRate(daMoeda, paraMoeda);
+
+    if(exchangeRate){
+        const convertedValue = valor * exchangeRate;
+
+        // console.log(convertedValue); 
+
+        const conversao = document.getElementById('conversao');
+        conversao.textContent = `Resultado: ${convertedValue.toFixed(2)} ${paraMoeda}`;
+    } else {
+        alert('Erro ao buscar a cotação. Tente novamente');
+    }
+});
