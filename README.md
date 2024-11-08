@@ -6,6 +6,18 @@
 
 ### A estrutura HTML é composta por um formulário onde o usuário insere o valor, seleciona a moeda de origem e a moeda de destino, e então clica em "Converter" para realizar a conversão. Além disso, há um botão "Limpar" para resetar o formulário.
 
+![alt text](conversor-API.gif)
+
+<h1 align="center" span style="color:#555">FUNCIONALIDADES</h1></span>
+
+* ### Conversão em tempo real: O projeto usa uma API de taxas de câmbio atualizadas automaticamente, diferentemente do modelo anterior que utilizava valores fixos no código.
+
+* ### Moedas oferecudas: Ele oferece suporte para conversões entre três moedas principais: Real (BRL), Dólar (USD) e Euro (EUR).
+
+* ### Entrada personalizada: O usuário pode inserir o valor que deseja converter, selecionar a moeda de origem e a moeda de destino.
+
+* ### Atualização automática de câmbio: As taxas de câmbio são atualizadas automaticamente com base nas informações mais recentes fornecidas pela API.
+
 <h1 align="center" span style="color:#555">TECNOLOGIAS UTILIZADAS💻</h1></span>
 
 * #### HTML
