@@ -23,7 +23,7 @@
 * #### HTML
 * #### CSS
 * #### JavaScript
-* #### [Conversor em tempo real](https://v6.exchangerate-api.com/v6/f87e2fb406e3f4528418e43f/latest/USD)
+* #### [Conversor em tempo real](https://www.exchangerate-api.com/)
 
 <h1 align="center" span style="color:#555">AUTORES🖊️</h1></span>
 
